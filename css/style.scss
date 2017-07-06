@@ -308,6 +308,12 @@ input.input-inline {
 	form {
 		width: 100%;
 	}
+
+	.card-list {
+		padding-bottom: 100px;
+		padding-top: 40px;
+		margin-top:-40px;
+	}
 }
 
 .card {
@@ -353,37 +359,6 @@ input.input-inline {
 			padding: 0px;
 			margin-right: 0px;
 		}
-	}
-}
-
-.app-popover-menu-utils {
-	margin-left: auto;
-	min-height: 16px;
-}
-
-.popovermenu {
-	z-index: 999;
-	opacity: 1;
-	display: block;
-	margin-top: 25px;
-	margin-right: 0px;
-
-	&.hidden {
-		display: none;
-	}
-
-	ul {
-		display: flex !important;
-		flex-direction: column;
-	}
-}
-
-.card {
-	&:hover {
-		background-color: $color-lightgrey;
-	}
-	.card-assignees {
-		margin: 5px;
 	}
 
 	a {
@@ -433,6 +408,7 @@ input.input-inline {
 		text-align: center;
 		padding: 10px;
 		margin: 10px;
+		margin-top: -100px;
 		border: none;
 		overflow: hidden;
 		-webkit-box-shadow: none;
@@ -461,6 +437,28 @@ input.input-inline {
 				min-height: initial;
 			}
 		}
+	}
+}
+
+.app-popover-menu-utils {
+	margin-left: auto;
+	min-height: 16px;
+}
+
+.popovermenu {
+	z-index: 999;
+	opacity: 1;
+	display: block;
+	margin-top: 25px;
+	margin-right: 0px;
+
+	&.hidden {
+		display: none;
+	}
+
+	ul {
+		display: flex !important;
+		flex-direction: column;
 	}
 }
 
